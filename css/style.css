@@ -1,0 +1,1541 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   license: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* make sure to set some focus styles for accessibility */
+:focus {
+    outline: 0;
+}
+
+/* html5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type=search] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+/**
+ * correct `inline-block` display not defined in ie 6/7/8/9 and firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    max-width: 100%;
+}
+
+/**
+ * prevent modern browsers from displaying `audio` without controls.
+ * remove excess height in ios 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * address styling not present in ie 7/8/9, firefox 3, and safari 4.
+ * known issue: no ie 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/**
+ * 1. correct text resizing oddly in ie 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. prevent ios text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-size: 100%;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+}
+
+/**
+ * address `outline` inconsistency between chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/**
+ * 1. remove border when inside `a` element in ie 6/7/8/9 and firefox 3.
+ * 2. improve image quality when scaled in ie 7.
+ */
+
+img {
+    border: 0;
+    /* 1 */
+    -ms-interpolation-mode: bicubic;
+    /* 2 */
+}
+
+/**
+ * address margin not present in ie 6/7/8/9, safari 5, and opera 11.
+ */
+
+figure {
+    margin: 0;
+}
+
+/**
+ * correct margin displayed oddly in ie 6/7.
+ */
+
+form {
+    margin: 0;
+}
+
+/**
+ * define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. correct color not being inherited in ie 6/7/8/9.
+ * 2. correct text not wrapping in firefox 3.
+ * 3. correct alignment displayed oddly in ie 6/7.
+ */
+
+legend {
+    border: 0;
+    /* 1 */
+    padding: 0;
+    white-space: normal;
+    /* 2 */
+    *margin-left: -7px;
+    /* 3 */
+}
+
+/**
+ * 1. correct font size not being inherited in all browsers.
+ * 2. address margins set differently in ie 6/7, firefox 3+, safari 5,
+ *    and chrome.
+ * 3. improve appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+    vertical-align: baseline;
+    /* 3 */
+    *vertical-align: middle;
+    /* 3 */
+}
+
+/**
+ * address firefox 3+ setting `line-height` on `input` using `!important` in
+ * the ua stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * address inconsistent `text-transform` inheritance for `button` and `select`.
+ * all other form control elements do not inherit `text-transform` values.
+ * correct `button` style inheritance in chrome, safari 5+, and ie 6+.
+ * correct `select` style inheritance in firefox 4+ and opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. avoid the webkit bug in android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. correct inability to style clickable `input` types in ios.
+ * 3. improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. remove inner spacing in ie 7 without affecting normal text inputs.
+ *    known issue: inner spacing remains in ie 6.
+ */
+
+button,
+html input[type="button"],
+/* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    /* 2 */
+    cursor: pointer;
+    /* 3 */
+    *overflow: visible;
+    /* 4 */
+}
+
+/**
+ * re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. address box sizing set to content-box in ie 8/9.
+ * 2. remove excess padding in ie 8/9.
+ * 3. remove excess padding in ie 7.
+ *    known issue: excess padding remains in ie 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+    *height: 13px;
+    /* 3 */
+    *width: 13px;
+    /* 3 */
+}
+
+/**
+ * 1. address `appearance` set to `searchfield` in safari 5 and chrome.
+ * 2. address `box-sizing` set to `border-box` in safari 5 and chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    -webkit-box-sizing: content-box;
+    /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * remove inner padding and search cancel button in safari 5 and chrome
+ * on os x.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * remove inner padding and border in firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. remove default vertical scrollbar in ie 6/7/8/9.
+ * 2. improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto;
+    /* 1 */
+    vertical-align: top;
+    /* 2 */
+}
+
+/**
+ * remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* lato-regular - latin */
+@font-face {
+    font-family: 'lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('lato regular'), local('lato-regular'),
+        url('../fonts/lato-v16-latin-regular.woff2') format('woff2'),
+        /* chrome 26+, opera 23+, firefox 39+ */
+        url('../fonts/lato-v16-latin-regular.woff') format('woff');
+    /* chrome 6+, firefox 3.6+, ie 9+, safari 5.1+ */
+}
+
+/* lato-700 - latin */
+@font-face {
+    font-family: 'lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('lato bold'), local('lato-bold'),
+        url('../fonts/lato-v16-latin-700.woff2') format('woff2'),
+        /* chrome 26+, opera 23+, firefox 39+ */
+        url('../fonts/lato-v16-latin-700.woff') format('woff');
+    /* chrome 6+, firefox 3.6+, ie 9+, safari 5.1+ */
+}
+
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+body {
+    font-family: 'lato';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #102746;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrapper-full {
+    max-width: 1262px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 36px;
+}
+
+.section-title::after {
+    display: block;
+    content: '';
+    width: 253px;
+    height: 3px;
+    background-color: #006dfe;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* header stylex start */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transition: .2s linear;
+    -o-transition: .2s linear;
+    transition: .2s linear;
+    padding-bottom: 20px;
+    z-index: 9;
+}
+
+.header_active {
+    background: #0e1d28;
+
+}
+
+.header__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 56px;
+}
+
+.header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.header__item {
+    margin-right: 82px;
+}
+
+.header__item:last-child {
+    margin-right: 0;
+}
+
+.header__link {
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header__link:hover,
+.header__link:focus,
+.header__link:active {
+    opacity: .75;
+}
+
+.header__burger {
+    width: 30px;
+    height: 28px;
+    position: relative;
+    display: none;
+}
+
+.burger__line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+
+}
+
+.burger__line_first {
+    top: 0;
+}
+
+.burger__line_second {
+    top: 50%;
+    -webkit-transform: translatey(-50%);
+        -ms-transform: translatey(-50%);
+            transform: translatey(-50%);
+}
+
+.burger__line_third {
+    bottom: 0;
+}
+
+/* header stylex end */
+
+/* intro stylex start */
+.intro {
+    min-height: 100vh;
+    background: url(../img/jpg/intro__bg.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 263px;
+    padding-bottom: 250px;
+
+}
+
+.intro__title {
+    max-width: 619px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: #ffffff;
+    margin-bottom: 22px;
+}
+
+.intro__subtitle {
+    max-width: 546px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-bottom: 59px;
+}
+
+.search-form__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.search-form__field {
+    width: 297px;
+    background: transparent url(../img/svg/circle__ico.svg) no-repeat left 7px;
+    background-size: 20px;
+    border: 0;
+    border-bottom: 2px solid #bfc0c5;
+    margin-right: 60px;
+    padding-left: 43px;
+    padding-bottom: 22px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.search-form__field::-webkit-input-placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.search-form__field::-moz-placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.search-form__field:-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.search-form__field::-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.search-form__field::placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.search-form__submit {
+    padding: 15px 39px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 4px;
+    background: #1b7dff;
+    border: 0;
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+}
+
+.search-form__submit:hover,
+.search-form__submit:focus,
+.search-form__submit:active {
+    background: #1361c7;
+    border-radius: 10px;
+}
+
+/* intro stylex end */
+
+
+/* benefits styles start*/
+.benefits {
+    margin-bottom: 131px;
+}
+
+
+.benefits__wrap {
+    max-width: 1262px;
+    background: #fff;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+            box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+    position: relative;
+}
+
+.benefits__title {
+    width: 100%;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    padding: 93px 100px 88px 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translatey(-99%);
+        -ms-transform: translatey(-99%);
+            transform: translatey(-99%);
+    background-color: #fff;
+
+}
+
+.benefits__cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 55px 1fr 55px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 55px;
+    padding: 0 100px;
+}
+
+.benefits__card {
+    -ms-grid-column-span: 1;
+    grid-column: span 1;
+    margin-bottom: 112px;
+}
+
+.benefits__card-pic {
+    max-width: 66px;
+    margin-bottom: 37px;
+
+}
+
+.benefits__card-thumb {
+    display: block;
+}
+
+.benefits__card-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 26px;
+    color: #000;
+}
+
+.benefits__card-desc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 39px;
+}
+
+.benefits__card-more {
+    display: inline-block;
+    padding-right: 59px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #006dfe;
+    text-decoration: none;
+    background: url(../img/svg/arrow-right__ico.svg) no-repeat 95% center;
+    -webkit-transition: .2s all;
+    -o-transition: .2s all;
+    transition: .2s all;
+}
+
+.benefits__card-more:hover,
+.benefits__card-more:focus {
+    background: url(../img/svg/arrow-right__ico.svg) no-repeat right center;
+}
+
+/* benefits styles end*/
+
+
+/* places styles start*/
+
+.places {
+    margin-bottom: 131px;
+}
+
+.places__caption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+}
+
+.places__title {
+    margin-right: 15px;
+}
+
+.places__view-all {
+    padding-right: 56px;
+    font-size: 16px;
+    color: #006dfe;
+    text-decoration: none;
+    background: url(../img/svg/arrow-right__ico.svg) no-repeat right center;
+    -webkit-transition: .2s all;
+    -o-transition: .2s all;
+    transition: .2s all;
+}
+
+.places__view-all:hover,
+.places__view-all:focus {
+    opacity: .65;
+}
+
+.places__cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.places__card {
+    position: relative;
+    overflow: hidden;
+}
+
+.places__card::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 24, 36, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.places__card:hover .places__card-pic {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+}
+
+.places__card-title {
+    font-size: 50px;
+    line-height: 60px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 27px;
+    left: 29px;
+    z-index: 3;
+}
+
+.places__card__size__lg {
+    -ms-grid-column-span: 3;
+    grid-column: span 3;
+}
+
+.places__card__size__sm {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+}
+
+.places__card-pic {
+    width: 100%;
+    -webkit-transition: .15s;
+    -o-transition: .15s;
+    transition: .15s;
+}
+
+.places__card-pic__size__lg {
+    height: 354px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.places__card-pic__size__sm {
+    height: 256px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.places__card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -4;
+}
+
+/* places styles end*/
+
+
+/* tours styles start*/
+.tours {
+    margin-bottom: 139px;
+}
+
+.tours__tour {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 108px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 108px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 77px;
+}
+
+.tour__info {
+    padding-left: 47px;
+}
+
+.tour__title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 85px;
+}
+
+.tour__desc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 58px;
+}
+
+.tour__more {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 59px;
+    text-decoration: none;
+    color: #006dfe;
+    background: url(../img/svg/arrow-right__ico.svg) no-repeat right center;
+}
+
+.tour__more:hover,
+.tour__more:focus {
+    opacity: .65;
+}
+
+/* tours styles end*/
+
+/* tours styles start*/
+
+.top {
+    margin-bottom: 86px;
+}
+
+.top__cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 57px 1fr 57px 1fr 57px 1fr 57px 1fr 57px 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 57px;
+    row-gap: 57px;
+}
+
+.top__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+}
+
+.top__card-pic {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.top__card-stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(21, 24, 36, 0.6);
+    padding: 16px 25px;
+}
+
+.top__card-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    margin: 0 auto 0 0;
+}
+
+.top__card-likes {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    padding-right: 20px;
+    background: url(../img/svg/like__ico.svg) no-repeat right;
+    margin-right: 14px;
+
+
+}
+
+.top__card-comments {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    padding-right: 23px;
+    background: url(../img/svg/comment__ico.svg) no-repeat right;
+}
+
+.top__card-desc {
+    margin-bottom: 31px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.top__card-more {
+    margin: auto 0 0 0;
+    width: 118px;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 12px 19px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    background: #006dfe;
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+
+}
+
+.top__card-more:hover,
+.top__card-more:active,
+.top__card-more:focus {
+    background: #1361c7;
+    border-radius: 10px;
+}
+
+/* top styles end*/
+
+/* videos styles start*/
+.videos {
+    width: 100%;
+}
+
+.videos__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.video__item {
+    padding-top: 56.25%;
+}
+
+.video__element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* videos styles end*/
+
+
+/* footer styles start */
+.footer {
+    background: #0e1d28;
+    padding: 119px 0;
+}
+
+.footer__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.footer__logo {
+    width: 50%;
+}
+
+.footer__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 50%;
+}
+
+.footer__menu-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+
+
+}
+
+
+.footer__menu-link {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer__menu-link:hover,
+.footer__menu-link:focus,
+.footer__menu-link:active {
+    opacity: .65;
+}
+
+/* footer styles end */
+
+/* mediad start */
+@media screen and (max-width: 960px) {
+
+    .search-form__field {
+        margin-bottom: 25px;
+    }
+
+    .benefits {
+        margin-bottom: 75px;
+    }
+
+    .benefits__cards {
+        padding: 0 15px;
+        column-gap: 35px;
+    }
+
+    .benefits__card {
+        margin-bottom: 60px;
+    }
+
+    .benefits__title {
+        padding: 55px 15px;
+    }
+
+    .benefits__wrap {
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+
+    .places__card__size__lg {
+        -ms-grid-column-span: 6;
+        grid-column: span 6;
+    }
+
+    .places__card-pic__size__lg {
+        height: 256px;
+    }
+
+    .places__card__size__sm {
+        -ms-grid-column-span: 6;
+        grid-column: span 6;
+    }
+
+    .tours__tour {
+        column-gap: 15px;
+    }
+
+    .tour__info {
+        padding-left: 0;
+    }
+
+    .tour__title {
+        margin-bottom: 15px;
+    }
+
+    .tour__desc {
+        margin-bottom: 15px;
+    }
+
+    .top__cards {
+        column-gap: 25px;
+        row-gap: 55px;
+    }
+
+    .top__card {
+        -ms-grid-column-span: 3;
+        grid-column: span 3;
+    }
+
+    .top__card-pic {
+        margin-bottom: 25px;
+    }
+
+    .footer {
+        padding: 60px 0;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .section-title {
+        margin-bottom: 25px;
+    }
+
+    .section-title::after {
+        width: 78px;
+    }
+
+    .header__wrapper {
+        padding-top: 25px;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .header__nav {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #000;
+        z-index: 10;
+        padding: 75px;
+        -webkit-transform: translatex(100%);
+            -ms-transform: translatex(100%);
+                transform: translatex(100%);
+        -webkit-transition: .2s all linear;
+        -o-transition: .2s all linear;
+        transition: .2s all linear;
+    }
+
+    .header__nav_activ {
+        -webkit-transform: translatex(0);
+            -ms-transform: translatex(0);
+                transform: translatex(0);
+    }
+
+    .header__item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .header__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .header__link {
+        font-size: 42px;
+        line-height: 48px;
+    }
+
+    .header__nav-close {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 11;
+    }
+
+    .header__nav-close-line {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 50%;
+
+    }
+
+    .header__nav-close-line:first-child {
+        -webkit-transform: translatey(-50%) rotate(45deg);
+            -ms-transform: translatey(-50%) rotate(45deg);
+                transform: translatey(-50%) rotate(45deg);
+    }
+
+    .header__nav-close-line:last-child {
+        -webkit-transform: translatey(-50%) rotate(-45deg);
+            -ms-transform: translatey(-50%) rotate(-45deg);
+                transform: translatey(-50%) rotate(-45deg);
+    }
+
+    .intro {
+        padding-top: 125px;
+    }
+
+    .intro__title {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .intro__subtitle {
+        font-size: 14px;
+    }
+
+    .search-form__field {
+        width: 100%;
+        margin-right: 0px;
+        padding-bottom: 12px;
+        background: transparent url(../img/svg/circle__ico.svg) no-repeat left 2px;
+    }
+
+    .search-form__field::-webkit-input-placeholder {
+        font-style: 16px;
+    }
+
+    .search-form__field::-moz-placeholder {
+        font-style: 16px;
+    }
+
+    .search-form__field:-ms-input-placeholder {
+        font-style: 16px;
+    }
+
+    .search-form__field::-ms-input-placeholder {
+        font-style: 16px;
+    }
+
+    .search-form__field::placeholder {
+        font-style: 16px;
+    }
+
+    .search-form__submit {
+        width: 100%;
+    }
+
+    .benefits {
+        margin-bottom: 36px;
+    }
+
+    .benefits__card {
+        -ms-grid-column-span: 3;
+        grid-column: span 3;
+        margin-bottom: 30px;
+    }
+
+    .benefits__card-pic {
+        margin-bottom: 20px;
+        height: 20%;
+        width: 20%;
+    }
+
+    .benefits__card-title {
+        margin-bottom: 12px;
+    }
+
+    .benefits__card-desc {
+        margin-bottom: 20px;
+    }
+
+
+    .places {
+        margin-bottom: 76px;
+    }
+
+    .places__view-all {
+        margin-bottom: 20px;
+    }
+
+    .places__card places__card__size__lg {
+        height: 254px;
+    }
+
+    .places__view-all {
+        margin-bottom: 25px;
+    }
+
+    .places__caption {
+        margin-bottom: 0;
+    }
+
+    .tours {
+        margin-bottom: 76px;
+    }
+
+    .tours__tour {
+        margin-bottom: 0px;
+    }
+
+    .tour__pic,
+    .tour__info {
+        -ms-grid-column-span: 2;
+        grid-column: span 2;
+    }
+
+    .tour__pic {
+        margin-bottom: 12px;
+    }
+
+    .tour__pic-mob-first {
+        -ms-grid-row: -1;
+            grid-row-start: -1;
+    }
+
+    .top {
+        margin-bottom: 76px;
+    }
+
+    .top__card {
+        -ms-grid-column-span: 6;
+        grid-column: span 6;
+    }
+
+    .top__card-stats {
+        max-width: 386px;
+    }
+
+    .top__card-desc {
+        margin-bottom: 15px;
+    }
+
+    .footer__logo {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .footer__nav {
+        width: 100%;
+    }
+
+    .footer__menu {
+        width: 50%;
+        margin-bottom: 24px;
+    }
+
+    .footer__menu:last-child {
+        margin-bottom: 0;
+    }
+
+
+
+
+}
+
+@media screen and (max-width:500px) {
+    .header__nav {
+        padding: 75px 30px;
+    }
+}
+
+
+
+/* mediad end */
